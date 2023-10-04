@@ -8,7 +8,7 @@ class MorseCodeDecoder
     'Z' => '--..', '0' => '-----', '1' => '.----', '2' => '..---', '3' => '...--',
     '4' => '....-', '5' => '.....', '6' => '-....', '7' => '--...', '8' => '---..',
     '9' => '----.', ' ' => ' '
-}.freeze
+  }.freeze
 
   # Create a method to decode a Morse code character
   def self.decode_char(morse_char)
