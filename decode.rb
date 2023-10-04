@@ -10,9 +10,19 @@ class MorseCodeDecoder
       '9' => '----.', ' ' => ' '
     }
   
+    # Create a method to decode a Morse code character
     def self.decode_char(morse_char)
       MORSE_CODE.key(morse_char)
+    end
+
+    # Create a method to decode a Morse code Word
+    def self.decode_word(morse_word)
+      morse_word.split.map { |morse_char| decode_char(morse_char) }.join
     end
   
    
   end
+
+puts MorseCodeDecoder.decode_char(".-")
+
+puts MorseCodeDecoder.decode_word('----- .-.')
