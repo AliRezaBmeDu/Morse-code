@@ -22,7 +22,7 @@ class MorseCodeDecoder
 
   # create a method to decode morse_message
   def self.decode_message(morse_message)
-    morse_message.split('   ').map { |morse_word| decode_word(morse_word) }.join(' ')
+    morse_message.split('   ').map { decode_word(morse_word) }.join(' ')
   end
 end
 
